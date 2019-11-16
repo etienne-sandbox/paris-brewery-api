@@ -1,0 +1,32 @@
+{
+  "name": "paris-brewery-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "build-data": "ts-node ./scripts/buildData.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etienne-sandbox/paris-brewery-api.git"
+  },
+  "keywords": [],
+  "author": "Etienne Dldc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/etienne-sandbox/paris-brewery-api/issues"
+  },
+  "homepage": "https://github.com/etienne-sandbox/paris-brewery-api#readme",
+  "devDependencies": {
+    "@types/fs-extra": "^8.0.1",
+    "cuid": "^2.1.6",
+    "fs-extra": "^8.1.0",
+    "ts-node": "^8.5.2",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "tumau": "^1.0.0-alpha.46",
+    "yup": "^0.27.0"
+  }
+}
