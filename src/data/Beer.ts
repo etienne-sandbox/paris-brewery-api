@@ -2,783 +2,741 @@ import { Beer } from './types';
 
 export const BEERS: Array<Beer> = [
   {
-    id: 'sj1sq4l',
+    id: 'l91hq2n',
     name: 'ORIGINAL',
     alcool: 5.8,
     url: 'https://www.bapbap.paris/bieres-artisanales-parisiennes-bapbap/',
-    brewery: { id: 'sj0sqvv', name: 'BAPBAP' }
+    brewery: { id: 'l90hqhh', name: 'BAPBAP' }
   },
   {
-    id: 'sj2sqtq',
+    id: 'la2hq5m',
     name: 'BLANC BEC',
     alcool: 4.5,
     url: 'https://www.bapbap.paris/bieres-artisanales-parisiennes-bapbap/',
-    brewery: { id: 'sj0sqvv', name: 'BAPBAP' }
+    brewery: { id: 'l90hqhh', name: 'BAPBAP' }
   },
   {
-    id: 'sj3sq3a',
+    id: 'la3hqyf',
     name: 'VERTIGO',
     alcool: 6,
     url: 'https://www.bapbap.paris/bieres-artisanales-parisiennes-bapbap/',
-    brewery: { id: 'sj0sqvv', name: 'BAPBAP' }
+    brewery: { id: 'l90hqhh', name: 'BAPBAP' }
   },
   {
-    id: 'sj4sqqo',
+    id: 'la4hqnc',
     name: 'TOAST',
     alcool: 4.5,
     url: 'https://www.bapbap.paris/bieres-artisanales-parisiennes-bapbap/',
-    brewery: { id: 'sj0sqvv', name: 'BAPBAP' }
+    brewery: { id: 'l90hqhh', name: 'BAPBAP' }
   },
   {
-    id: 'sj5sqwx',
+    id: 'la5hqi2',
     name: 'POIDS PLUME',
     alcool: 3,
     url: 'https://www.bapbap.paris/bieres-artisanales-parisiennes-bapbap/',
-    brewery: { id: 'sj0sqvv', name: 'BAPBAP' }
+    brewery: { id: 'l90hqhh', name: 'BAPBAP' }
   },
   {
-    id: 'sj6sq3j',
+    id: 'la6hq2y',
     name: 'TRANSALPINE',
     alcool: 6.8,
     url: 'https://www.bapbap.paris/bieres-artisanales-parisiennes-bapbap/',
-    brewery: { id: 'sj0sqvv', name: 'BAPBAP' }
+    brewery: { id: 'l90hqhh', name: 'BAPBAP' }
   },
   {
-    id: 'sj7sqfg',
+    id: 'la7hqhp',
     name: 'МИРАБЕЛЬ',
     alcool: 4.3,
     url: 'https://www.bapbap.paris/bieres-artisanales-parisiennes-bapbap/',
-    brewery: { id: 'sj0sqvv', name: 'BAPBAP' }
+    brewery: { id: 'l90hqhh', name: 'BAPBAP' }
   },
   {
-    id: 'sj8sqrr',
+    id: 'la8hq19',
     name: 'WEISSE CITY',
     alcool: 4.5,
     url: 'https://www.bapbap.paris/bieres-artisanales-parisiennes-bapbap/',
-    brewery: { id: 'sj0sqvv', name: 'BAPBAP' }
+    brewery: { id: 'l90hqhh', name: 'BAPBAP' }
   },
   {
-    id: 'sj9sq69',
+    id: 'la9hqa8',
     name: 'TUTTI FRUTTI',
     alcool: 5.2,
     url: 'https://www.bapbap.paris/bieres-artisanales-parisiennes-bapbap/',
-    brewery: { id: 'sj0sqvv', name: 'BAPBAP' }
+    brewery: { id: 'l90hqhh', name: 'BAPBAP' }
   },
   {
-    id: 'sjasqgk',
+    id: 'laahqsf',
     name: 'SHIFUMI',
     alcool: 5.3,
     url: 'https://www.bapbap.paris/bieres-artisanales-parisiennes-bapbap/',
-    brewery: { id: 'sj0sqvv', name: 'BAPBAP' }
+    brewery: { id: 'l90hqhh', name: 'BAPBAP' }
   },
   {
-    id: 'sjcsq9e',
+    id: 'lachq4m',
     name: 'Batignolle',
     alcool: 5.4,
     url: 'http://societeparisiennedebiere.fr/nos-creations.html',
-    brewery: { id: 'sjbsq4h', name: 'Société Parisienne de Bière' }
+    brewery: { id: 'labhq5q', name: 'Société Parisienne de Bière' }
   },
   {
-    id: 'sjesqqd',
+    id: 'laehq5z',
     name: 'PARIS ALE',
     alcool: 4.7,
     url: 'http://demoryparis.com/paris-ale-blonde-ale/',
-    brewery: { id: 'sjdsqr0', name: 'Demory Paris' }
+    brewery: { id: 'ladhqk7', name: 'Demory Paris' }
   },
   {
-    id: 'sjfsqx9',
+    id: 'lafhqpy',
     name: 'PARIS IPA',
     alcool: 5.5,
     url: 'http://demoryparis.com/paris-ipa/',
-    brewery: { id: 'sjdsqr0', name: 'Demory Paris' }
+    brewery: { id: 'ladhqk7', name: 'Demory Paris' }
   },
   {
-    id: 'sjgsqsh',
+    id: 'laghqbo',
     name: 'ROQUETTE BLANCHE',
     alcool: 5.7,
     url: 'http://demoryparis.com/roquette-blanche-57/',
-    brewery: { id: 'sjdsqr0', name: 'Demory Paris' }
+    brewery: { id: 'ladhqk7', name: 'Demory Paris' }
   },
   {
-    id: 'sjhsqyv',
+    id: 'lahhqdg',
     name: 'ASTROBLONDE',
     alcool: 4.8,
     url: 'http://demoryparis.com/astroblonde-48/',
-    brewery: { id: 'sjdsqr0', name: 'Demory Paris' }
+    brewery: { id: 'ladhqk7', name: 'Demory Paris' }
   },
   {
-    id: 'sjisqv9',
+    id: 'laihqcc',
     name: 'ALTITUDE',
     alcool: 4.7,
     url: 'http://demoryparis.com/altitude-altbier/',
-    brewery: { id: 'sjdsqr0', name: 'Demory Paris' }
+    brewery: { id: 'ladhqk7', name: 'Demory Paris' }
   },
   {
-    id: 'sjjsqv4',
+    id: 'lajhqc5',
     name: 'NOVA NOIRE',
     alcool: 4.7,
     url: 'http://demoryparis.com/nova-noire-47/',
-    brewery: { id: 'sjdsqr0', name: 'Demory Paris' }
+    brewery: { id: 'ladhqk7', name: 'Demory Paris' }
   },
   {
-    id: 'sjksqx4',
+    id: 'lakhqpy',
     name: 'COSMOBLONDE',
     alcool: 4.7,
     url: 'http://demoryparis.com/cosmoblonde-47/',
-    brewery: { id: 'sjdsqr0', name: 'Demory Paris' }
+    brewery: { id: 'ladhqk7', name: 'Demory Paris' }
   },
   {
-    id: 'sjlsqg5',
+    id: 'lalhqob',
     name: 'ATOMIQUE',
     alcool: 6.5,
     url: 'http://demoryparis.com/atomique-65/',
-    brewery: { id: 'sjdsqr0', name: 'Demory Paris' }
+    brewery: { id: 'ladhqk7', name: 'Demory Paris' }
   },
   {
-    id: 'sjmsqy3',
+    id: 'lamhq9b',
     name: 'SAINTE GENEVIÈVE',
     alcool: 7.8,
     url: 'http://demoryparis.com/sainte-genevieve-triple/',
-    brewery: { id: 'sjdsqr0', name: 'Demory Paris' }
+    brewery: { id: 'ladhqk7', name: 'Demory Paris' }
   },
   {
-    id: 'sjnsqce',
+    id: 'lanhqof',
     name: 'PRODIGE IPA SANS ALCOOL',
     alcool: 0.9,
     url: 'http://demoryparis.com/prodige-ipa-sans-alcool/',
-    brewery: { id: 'sjdsqr0', name: 'Demory Paris' }
+    brewery: { id: 'ladhqk7', name: 'Demory Paris' }
   },
   {
-    id: 'sjosqpl',
+    id: 'laohqs6',
     name: 'INTRÉPIDE IPA',
     alcool: 6.3,
     url: 'http://demoryparis.com/intrepide-ipa-63/',
-    brewery: { id: 'sjdsqr0', name: 'Demory Paris' }
+    brewery: { id: 'ladhqk7', name: 'Demory Paris' }
   },
   {
-    id: 'sjpsq7s',
+    id: 'laphqwt',
     name: 'HÉROÏQUE DIPA',
     alcool: 8,
     url: 'http://demoryparis.com/heroique-dipa/',
-    brewery: { id: 'sjdsqr0', name: 'Demory Paris' }
+    brewery: { id: 'ladhqk7', name: 'Demory Paris' }
   },
   {
-    id: 'sjrsqhk',
+    id: 'larhqic',
     name: 'Sphinx',
     alcool: 4.5,
     url: 'https://brasseriedeletre.paris/',
-    brewery: { id: 'sjqsqhm', name: "Brasserie de l'Être" }
+    brewery: { id: 'laqhqzp', name: "Brasserie de l'Être" }
   },
   {
-    id: 'sjssqj2',
+    id: 'lashqg1',
     name: 'Salamandra',
     alcool: 6.5,
     url: 'https://brasseriedeletre.paris/',
-    brewery: { id: 'sjqsqhm', name: "Brasserie de l'Être" }
+    brewery: { id: 'laqhqzp', name: "Brasserie de l'Être" }
   },
   {
-    id: 'sjtsqaz',
+    id: 'lathq55',
     name: 'Oliphant',
     alcool: 6.5,
     url: 'https://brasseriedeletre.paris/',
-    brewery: { id: 'sjqsqhm', name: "Brasserie de l'Être" }
+    brewery: { id: 'laqhqzp', name: "Brasserie de l'Être" }
   },
   {
-    id: 'sjusqim',
+    id: 'lauhq6b',
     name: 'Cerberus',
     alcool: 7.5,
     url: 'https://brasseriedeletre.paris/',
-    brewery: { id: 'sjqsqhm', name: "Brasserie de l'Être" }
+    brewery: { id: 'laqhqzp', name: "Brasserie de l'Être" }
   },
   {
-    id: 'sjvsqzz',
+    id: 'lavhqpd',
     name: 'Feond',
     alcool: 8.5,
     url: 'https://brasseriedeletre.paris/',
-    brewery: { id: 'sjqsqhm', name: "Brasserie de l'Être" }
+    brewery: { id: 'laqhqzp', name: "Brasserie de l'Être" }
   },
   {
-    id: 'skxsqej',
+    id: 'laxhqvr',
     name: 'La Lucite',
     alcool: 4.2,
     url: 'http://www.brasserie-la-baleine.com/',
-    brewery: { id: 'sjwsq4x', name: 'Brasserie La Baleine' }
+    brewery: { id: 'lawhqox', name: 'Brasserie La Baleine' }
   },
   {
-    id: 'skysqdw',
+    id: 'layhq9f',
     name: 'La Gitane',
     alcool: 5,
     url: 'http://www.brasserie-la-baleine.com/',
-    brewery: { id: 'sjwsq4x', name: 'Brasserie La Baleine' }
+    brewery: { id: 'lawhqox', name: 'Brasserie La Baleine' }
   },
   {
-    id: 'skzsqfu',
+    id: 'lazhqin',
     name: 'La Picaro',
     alcool: 5,
     url: 'http://www.brasserie-la-baleine.com/',
-    brewery: { id: 'sjwsq4x', name: 'Brasserie La Baleine' }
+    brewery: { id: 'lawhqox', name: 'Brasserie La Baleine' }
   },
   {
-    id: 'sk10sqiu',
+    id: 'la10hqjl',
     name: "L'Arrache Coeur",
     alcool: 5,
     url: 'http://www.brasserie-la-baleine.com/',
-    brewery: { id: 'sjwsq4x', name: 'Brasserie La Baleine' }
+    brewery: { id: 'lawhqox', name: 'Brasserie La Baleine' }
   },
   {
-    id: 'sk11sq8c',
+    id: 'la11hqge',
     name: "Fête l'Amour",
     alcool: 4.2,
     url: 'http://www.brasserie-la-baleine.com/',
-    brewery: { id: 'sjwsq4x', name: 'Brasserie La Baleine' }
+    brewery: { id: 'lawhqox', name: 'Brasserie La Baleine' }
   },
   {
-    id: 'sk12sqa5',
+    id: 'la12hqcy',
     name: 'La Phare',
     alcool: 5,
     url: 'http://www.brasserie-la-baleine.com/',
-    brewery: { id: 'sjwsq4x', name: 'Brasserie La Baleine' }
+    brewery: { id: 'lawhqox', name: 'Brasserie La Baleine' }
   },
   {
-    id: 'sk13sq55',
+    id: 'la13hq1u',
     name: 'Volute',
     alcool: 5,
     url: 'http://www.brasserie-la-baleine.com/',
-    brewery: { id: 'sjwsq4x', name: 'Brasserie La Baleine' }
+    brewery: { id: 'lawhqox', name: 'Brasserie La Baleine' }
   },
   {
-    id: 'sk14sqca',
+    id: 'la14hqih',
     name: 'Cru 1910',
     alcool: 5,
     url: 'http://www.brasserie-la-baleine.com/',
-    brewery: { id: 'sjwsq4x', name: 'Brasserie La Baleine' }
+    brewery: { id: 'lawhqox', name: 'Brasserie La Baleine' }
   },
   {
-    id: 'sk15sqgl',
+    id: 'la15hq12',
     name: 'Cru 1924',
     alcool: 5,
     url: 'http://www.brasserie-la-baleine.com/',
-    brewery: { id: 'sjwsq4x', name: 'Brasserie La Baleine' }
+    brewery: { id: 'lawhqox', name: 'Brasserie La Baleine' }
   },
   {
-    id: 'sk17sq0f',
+    id: 'la17hqtj',
     name: 'PARISIS BLONDE',
     alcool: 6.5,
     url: 'http://brasserie-parisis.com/les-classiques/',
-    brewery: { id: 'sk16sqv9', name: 'Brasserie Parisis' }
+    brewery: { id: 'la16hq3o', name: 'Brasserie Parisis' }
   },
   {
-    id: 'sk18squy',
+    id: 'la18hqj2',
     name: 'PARISIS BLANCHE',
     alcool: 4.1,
     url: 'http://brasserie-parisis.com/les-classiques/',
-    brewery: { id: 'sk16sqv9', name: 'Brasserie Parisis' }
+    brewery: { id: 'la16hq3o', name: 'Brasserie Parisis' }
   },
   {
-    id: 'sk19sqx3',
+    id: 'la19hqxx',
     name: 'PARISIS AMBRÉE',
     alcool: 6.2,
     url: 'http://brasserie-parisis.com/les-classiques/',
-    brewery: { id: 'sk16sqv9', name: 'Brasserie Parisis' }
+    brewery: { id: 'la16hq3o', name: 'Brasserie Parisis' }
   },
   {
-    id: 'sk1asq09',
+    id: 'la1ahqq1',
     name: 'PSYCHOTIC PALE ALE',
     alcool: 5,
     url: 'http://brasserie-parisis.com/les-classiques/',
-    brewery: { id: 'sk16sqv9', name: 'Brasserie Parisis' }
+    brewery: { id: 'la16hq3o', name: 'Brasserie Parisis' }
   },
   {
-    id: 'sk1bsq48',
+    id: 'la1bhql1',
     name: 'IPA SOUS SÉNART',
     alcool: 7.6,
     url: 'http://brasserie-parisis.com/les-speciales/',
-    brewery: { id: 'sk16sqv9', name: 'Brasserie Parisis' }
+    brewery: { id: 'la16hq3o', name: 'Brasserie Parisis' }
   },
   {
-    id: 'sk1csq2n',
+    id: 'la1chqnw',
     name: 'IPARISIS',
     alcool: 6.2,
     url: 'http://brasserie-parisis.com/les-speciales/',
-    brewery: { id: 'sk16sqv9', name: 'Brasserie Parisis' }
+    brewery: { id: 'la16hq3o', name: 'Brasserie Parisis' }
   },
   {
-    id: 'sk1dsqun',
+    id: 'la1dhqt8',
     name: 'MORTAL KAWA',
     alcool: 9.5,
     url: 'http://brasserie-parisis.com/les-speciales/',
-    brewery: { id: 'sk16sqv9', name: 'Brasserie Parisis' }
+    brewery: { id: 'la16hq3o', name: 'Brasserie Parisis' }
   },
   {
-    id: 'sk1esqwm',
+    id: 'la1ehqmc',
     name: 'SMASH',
     alcool: 5,
     url: 'http://brasserie-parisis.com/les-speciales/',
-    brewery: { id: 'sk16sqv9', name: 'Brasserie Parisis' }
+    brewery: { id: 'la16hq3o', name: 'Brasserie Parisis' }
   },
   {
-    id: 'sk1fsqm2',
+    id: 'la1fhq0t',
     name: 'HOP SAVE THE QUEEN',
     alcool: 5.6,
     url: 'http://brasserie-parisis.com/les-speciales/',
-    brewery: { id: 'sk16sqv9', name: 'Brasserie Parisis' }
+    brewery: { id: 'la16hq3o', name: 'Brasserie Parisis' }
   },
   {
-    id: 'sk1hsqiu',
+    id: 'la1hhqld',
     name: 'Weissbier',
     alcool: 5.2,
     url: 'https://www.galliaparis.com/bieres/weissbier',
-    brewery: { id: 'sk1gsq60', name: 'Galia Paris' }
+    brewery: { id: 'la1ghqpe', name: 'Galia Paris' }
   },
   {
-    id: 'sk1isqjq',
+    id: 'la1ihqt6',
     name: 'West IPA',
     alcool: 6,
     url: 'https://www.galliaparis.com/bieres/west-ipa',
-    brewery: { id: 'sk1gsq60', name: 'Galia Paris' }
+    brewery: { id: 'la1ghqpe', name: 'Galia Paris' }
   },
   {
-    id: 'sk1jsq9c',
+    id: 'la1jhqlo',
     name: 'Corde Sensible BA',
     alcool: 13.2,
     url: 'https://www.galliaparis.com/bieres/corde-sensible-ba',
-    brewery: { id: 'sk1gsq60', name: 'Galia Paris' }
+    brewery: { id: 'la1ghqpe', name: 'Galia Paris' }
   },
   {
-    id: 'sk1ksq1s',
+    id: 'la1khq0y',
     name: 'Karea',
     alcool: 4.4,
     url: 'https://www.galliaparis.com/bieres/karea',
-    brewery: { id: 'sk1gsq60', name: 'Galia Paris' }
+    brewery: { id: 'la1ghqpe', name: 'Galia Paris' }
   },
   {
-    id: 'sk1lsqs5',
+    id: 'la1lhqq1',
     name: 'Le Champ Sauvage',
     alcool: 5,
     url: 'https://www.galliaparis.com/bieres/le-champ-sauvage',
-    brewery: { id: 'sk1gsq60', name: 'Galia Paris' }
+    brewery: { id: 'la1ghqpe', name: 'Galia Paris' }
   },
   {
-    id: 'sk1msq3d',
+    id: 'la1mhqmi',
     name: 'Lager',
     alcool: 5.5,
     url: 'https://www.galliaparis.com/bieres/lager',
-    brewery: { id: 'sk1gsq60', name: 'Galia Paris' }
+    brewery: { id: 'la1ghqpe', name: 'Galia Paris' }
   },
   {
-    id: 'sk1nsqb2',
+    id: 'la1nhqdc',
     name: 'Njut',
     alcool: 4,
     url: 'https://www.galliaparis.com/bieres/njut',
-    brewery: { id: 'sk1gsq60', name: 'Galia Paris' }
+    brewery: { id: 'la1ghqpe', name: 'Galia Paris' }
   },
   {
-    id: 'sk1osqsk',
+    id: 'la1ohq5e',
     name: 'East IPA',
     alcool: 6,
     url: 'https://www.galliaparis.com/bieres/east-ipa',
-    brewery: { id: 'sk1gsq60', name: 'Galia Paris' }
+    brewery: { id: 'la1ghqpe', name: 'Galia Paris' }
   },
   {
-    id: 'sk1psq75',
+    id: 'la1phqnq',
     name: 'Carioca',
     alcool: 4.5,
     url: 'https://www.galliaparis.com/bieres/carioca',
-    brewery: { id: 'sk1gsq60', name: 'Galia Paris' }
+    brewery: { id: 'la1ghqpe', name: 'Galia Paris' }
   },
   {
-    id: 'sk1qsq6p',
+    id: 'la1qhqpd',
     name: 'Red Star x Gallia',
     alcool: 5.6,
     url: 'https://www.galliaparis.com/bieres/red-star-x-gallia',
-    brewery: { id: 'sk1gsq60', name: 'Galia Paris' }
+    brewery: { id: 'la1ghqpe', name: 'Galia Paris' }
   },
   {
-    id: 'sk1rsqw6',
+    id: 'la1rhqh8',
     name: 'Session IPA',
     alcool: 4.3,
     url: 'https://www.galliaparis.com/bieres/session-ipa',
-    brewery: { id: 'sk1gsq60', name: 'Galia Paris' }
+    brewery: { id: 'la1ghqpe', name: 'Galia Paris' }
   },
   {
-    id: 'sk1ssqkx',
+    id: 'la1shqzi',
     name: 'Brut IPA',
     alcool: 7,
     url: 'https://www.galliaparis.com/bieres/brut-ipa',
-    brewery: { id: 'sk1gsq60', name: 'Galia Paris' }
+    brewery: { id: 'la1ghqpe', name: 'Galia Paris' }
   },
   {
-    id: 'sk1usqes',
+    id: 'la1uhqew',
     name: 'ALABAMA',
     alcool: 3.1,
     url: 'http://brasserielagouttedor.com/bieres/alabama/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk1vsqtx',
+    id: 'la1vhqub',
     name: 'LE ROI DES MOUCHES',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/le-roi-des-mouches/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk1wsq9j',
+    id: 'la1whqop',
     name: 'MERINGUE',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/meringue/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk1xsq10',
+    id: 'la1xhqyb',
     name: 'BLE D’INDE',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/ble-dinde/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk1ysqds',
+    id: 'la1yhqmt',
     name: 'CREAM',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/cream/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk1zsqbw',
+    id: 'la1zhqjg',
     name: 'SUCCUBE',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/succube/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk20sqik',
+    id: 'la20hqw3',
     name: 'ERNESTINE',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/ernestine/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk21sqgv',
+    id: 'la21hqku',
     name: 'TRUAND',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/truand/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk22sqmw',
+    id: 'la22hqfv',
     name: 'LA SOURCE',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/la-source/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk23sqql',
+    id: 'la23hqp6',
     name: 'YASAMIN',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/yasamin/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk24sq2v',
+    id: 'la24hq81',
     name: 'SWEET GANESH',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/sweet-ganesh/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk25sqq0',
+    id: 'la25hqp3',
     name: 'L’EDEN',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/leden/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk26sqs0',
+    id: 'la26hqns',
     name: 'CHÂTEAU ROUGE',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/chateau-rouge/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk27sqk5',
+    id: 'la27hqg0',
     name: 'LA CHAPELLE',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/la-chapelle/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk28sqp9',
+    id: 'la28hqs1',
     name: 'L’ASSOMMOIR',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/lassommoir/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk29sqfp',
+    id: 'la29hqra',
     name: 'HERBE BLEUE',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/herbe-bleue/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk2asqvm',
+    id: 'la2ahqu6',
     name: 'PETITE PIGALLE',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/petite-pigalle/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk2bsqah',
+    id: 'la2bhqd4',
     name: 'MYRHA',
     alcool: null,
     url: 'http://brasserielagouttedor.com/bieres/myrha-pale-ale/',
-    brewery: { id: 'sk1tsqjx', name: "Brasserie de la Goutte d'Or" }
+    brewery: { id: 'la1thqdn', name: "Brasserie de la Goutte d'Or" }
   },
   {
-    id: 'sk2dsqsk',
+    id: 'la2dhqx9',
     name: 'Blonde Pale Ale',
     alcool: 4.4,
     url: 'http://la-montreuilloise.com/bieres/la-blonde/',
-    brewery: { id: 'sk2csqvm', name: 'La Montreuilloise' }
+    brewery: { id: 'la2chqnq', name: 'La Montreuilloise' }
   },
   {
-    id: 'sk2esq0s',
+    id: 'la2ehqic',
     name: 'Rousse aux raisins fermentés',
     alcool: 5,
     url: 'http://la-montreuilloise.com/bieres/la-rousse/',
-    brewery: { id: 'sk2csqvm', name: 'La Montreuilloise' }
+    brewery: { id: 'la2chqnq', name: 'La Montreuilloise' }
   },
   {
-    id: 'sk2fsqu5',
+    id: 'la2fhq0f',
     name: 'Brune Chocolate Stout',
     alcool: 4.8,
     url: 'http://la-montreuilloise.com/bieres/la-brune/',
-    brewery: { id: 'sk2csqvm', name: 'La Montreuilloise' }
+    brewery: { id: 'la2chqnq', name: 'La Montreuilloise' }
   },
   {
-    id: 'sk2gsqil',
+    id: 'la2ghqh1',
     name: 'Blanche Witbier',
     alcool: 4.7,
     url: 'http://la-montreuilloise.com/bieres/la-blanche/',
-    brewery: { id: 'sk2csqvm', name: 'La Montreuilloise' }
+    brewery: { id: 'la2chqnq', name: 'La Montreuilloise' }
   },
   {
-    id: 'sk2hsqgy',
+    id: 'la2hhqh6',
     name: 'Smoked Porter',
     alcool: 5.2,
     url: 'http://la-montreuilloise.com/bieres/smoked-porter/',
-    brewery: { id: 'sk2csqvm', name: 'La Montreuilloise' }
+    brewery: { id: 'la2chqnq', name: 'La Montreuilloise' }
   },
   {
-    id: 'sk2isqhn',
+    id: 'la2ihqaz',
     name: 'IPA – Mandarina Bavaria',
     alcool: 4.2,
     url:
       'http://la-montreuilloise.com/bieres/ipa-single-hop-mandarina-bavaria/',
-    brewery: { id: 'sk2csqvm', name: 'La Montreuilloise' }
+    brewery: { id: 'la2chqnq', name: 'La Montreuilloise' }
   },
   {
-    id: 'sk2jsqhd',
+    id: 'la2jhqu0',
     name: 'PEREGRINA London Ale',
     alcool: 4.5,
     url: 'http://la-montreuilloise.com/bieres/peregrina-london-ale/',
-    brewery: { id: 'sk2csqvm', name: 'La Montreuilloise' }
+    brewery: { id: 'la2chqnq', name: 'La Montreuilloise' }
   },
   {
-    id: 'sk2ksqxm',
+    id: 'la2khqhr',
     name: 'Fleur de Montreuil',
     alcool: 5,
     url: 'http://la-montreuilloise.com/bieres/les-speciales/',
-    brewery: { id: 'sk2csqvm', name: 'La Montreuilloise' }
+    brewery: { id: 'la2chqnq', name: 'La Montreuilloise' }
   },
   {
-    id: 'sk2lsq7i',
+    id: 'la2lhqez',
     name: 'La Grisette',
     alcool: 3.8,
     url: 'http://la-montreuilloise.com/bieres/la-grisette/',
-    brewery: { id: 'sk2csqvm', name: 'La Montreuilloise' }
+    brewery: { id: 'la2chqnq', name: 'La Montreuilloise' }
   },
   {
-    id: 'sk2nsqiz',
+    id: 'la2nhqvj',
     name: 'La Parisienne Blanche',
     alcool: 5.5,
     url:
       'http://brasserielaparisienne.com/biere-artisanale-parisienne-classique-blanche/',
-    brewery: { id: 'sk2msqfl', name: 'La Parisienne' }
+    brewery: { id: 'la2mhq8y', name: 'La Parisienne' }
   },
   {
-    id: 'sk2osqo5',
+    id: 'la2ohqes',
     name: 'La Parisienne Blonde',
     alcool: 5.5,
     url:
       'http://brasserielaparisienne.com/biere-artisanale-parisienne-classique-blonde/',
-    brewery: { id: 'sk2msqfl', name: 'La Parisienne' }
+    brewery: { id: 'la2mhq8y', name: 'La Parisienne' }
   },
   {
-    id: 'sk2psq5w',
+    id: 'la2phqau',
     name: 'La Parisienne Rousse',
     alcool: 5.5,
     url:
       'http://brasserielaparisienne.com/biere-artisanale-parisienne-classique-rousse/',
-    brewery: { id: 'sk2msqfl', name: 'La Parisienne' }
+    brewery: { id: 'la2mhq8y', name: 'La Parisienne' }
   },
   {
-    id: 'sk2qsq1j',
+    id: 'la2qhq6e',
     name: 'La Parisienne Brune',
     alcool: 5.5,
     url:
       'http://brasserielaparisienne.com/biere-artisanale-parisienne-classique-brune/',
-    brewery: { id: 'sk2msqfl', name: 'La Parisienne' }
+    brewery: { id: 'la2mhq8y', name: 'La Parisienne' }
   },
   {
-    id: 'sk2rsqki',
+    id: 'la2rhqot',
     name: 'La Parisienne Bio Blanche',
     alcool: 5.5,
     url:
       'http://brasserielaparisienne.com/biere-artisanale-parisienne-bio-blanche/',
-    brewery: { id: 'sk2msqfl', name: 'La Parisienne' }
+    brewery: { id: 'la2mhq8y', name: 'La Parisienne' }
   },
   {
-    id: 'sk2ssq6k',
+    id: 'la2shq49',
     name: 'La Parisienne Bio Blonde',
     alcool: 5.5,
     url:
       'http://brasserielaparisienne.com/biere-artisanale-parisienne-bio-blonde/',
-    brewery: { id: 'sk2msqfl', name: 'La Parisienne' }
+    brewery: { id: 'la2mhq8y', name: 'La Parisienne' }
   },
   {
-    id: 'sk2tsqie',
+    id: 'la2thqqp',
     name: 'La Parisienne Libérée',
     alcool: 5.5,
     url:
       'http://brasserielaparisienne.com/biere-artisanale-parisienne-speciale-parisienne-liberee-lager/',
-    brewery: { id: 'sk2msqfl', name: 'La Parisienne' }
+    brewery: { id: 'la2mhq8y', name: 'La Parisienne' }
   },
   {
-    id: 'sk2usq3d',
+    id: 'la2uhqr5',
     name: 'Le Titi Parisien',
     alcool: 5.5,
     url:
       'http://brasserielaparisienne.com/biere-artisanale-parisienne-speciale-titi-parisien-ipa/',
-    brewery: { id: 'sk2msqfl', name: 'La Parisienne' }
+    brewery: { id: 'la2mhq8y', name: 'La Parisienne' }
   },
   {
-    id: 'sk2vsq8o',
+    id: 'la2vhq14',
     name: 'l’Apache 2.0',
     alcool: 7.5,
     url:
       'http://brasserielaparisienne.com/biere-artisanale-parisienne-speciale-apache-stout/',
-    brewery: { id: 'sk2msqfl', name: 'La Parisienne' }
+    brewery: { id: 'la2mhq8y', name: 'La Parisienne' }
   },
   {
-    id: 'sk2xsq7v',
+    id: 'la2xhqzu',
     name: 'IPA CITRA GALACTIQUE',
     alcool: 6.5,
     url: 'https://www.bgp.paris/7/nos-bieres',
-    brewery: { id: 'sk2wsq3n', name: 'Brasserie du Grand Paris' }
+    brewery: { id: 'la2whqvj', name: 'Brasserie du Grand Paris' }
   },
   {
-    id: 'sk2ysqwc',
+    id: 'la2yhqow',
     name: "À L'OUEST",
     alcool: 4.7,
     url: 'https://www.bgp.paris/7/nos-bieres',
-    brewery: { id: 'sk2wsq3n', name: 'Brasserie du Grand Paris' }
+    brewery: { id: 'la2whqvj', name: 'Brasserie du Grand Paris' }
   },
   {
-    id: 'sk2zsqxv',
+    id: 'la2zhqsv',
     name: 'NICE TO MEET YOU',
     alcool: 8.5,
     url: 'https://www.bgp.paris/7/nos-bieres',
-    brewery: { id: 'sk2wsq3n', name: 'Brasserie du Grand Paris' }
+    brewery: { id: 'la2whqvj', name: 'Brasserie du Grand Paris' }
   },
   {
-    id: 'sk30sqjw',
+    id: 'la30hqxu',
     name: 'DENISE',
     alcool: 5.5,
     url: 'https://www.bgp.paris/7/nos-bieres',
-    brewery: { id: 'sk2wsq3n', name: 'Brasserie du Grand Paris' }
+    brewery: { id: 'la2whqvj', name: 'Brasserie du Grand Paris' }
   },
   {
-    id: 'sk31sq2w',
+    id: 'la31hqol',
     name: 'WAIMEA BAY',
     alcool: 4.7,
     url: 'https://www.bgp.paris/7/nos-bieres',
-    brewery: { id: 'sk2wsq3n', name: 'Brasserie du Grand Paris' }
+    brewery: { id: 'la2whqvj', name: 'Brasserie du Grand Paris' }
   },
   {
-    id: 'sk32sqr3',
+    id: 'la32hqn8',
     name: "L'EXPRESS",
     alcool: 4.5,
     url: 'https://www.bgp.paris/7/nos-bieres',
-    brewery: { id: 'sk2wsq3n', name: 'Brasserie du Grand Paris' }
+    brewery: { id: 'la2whqvj', name: 'Brasserie du Grand Paris' }
   },
   {
-    id: 'sk33sqix',
+    id: 'la33hqnh',
     name: 'SMOKE ON THE WATER',
     alcool: 6,
     url: 'https://www.bgp.paris/7/nos-bieres',
-    brewery: { id: 'sk2wsq3n', name: 'Brasserie du Grand Paris' }
+    brewery: { id: 'la2whqvj', name: 'Brasserie du Grand Paris' }
   },
   {
-    id: 'sk34sqt1',
+    id: 'la34hqt2',
     name: 'PORTE DOREE',
     alcool: 5.2,
     url: 'https://www.bgp.paris/7/nos-bieres',
-    brewery: { id: 'sk2wsq3n', name: 'Brasserie du Grand Paris' }
+    brewery: { id: 'la2whqvj', name: 'Brasserie du Grand Paris' }
   },
   {
-    id: 'sk36sqz4',
+    id: 'la36hqxb',
     name: 'Simone ',
     alcool: 5.4,
     url: 'http://www.triangleparis.com/#bieres',
-    brewery: { id: 'sk35sqin', name: 'Le Triangle' }
+    brewery: { id: 'la35hqh2', name: 'Le Triangle' }
   },
   {
-    id: 'sk37sqgu',
+    id: 'la37hqnn',
     name: 'Gryesette ',
     alcool: 5.7,
     url: 'http://www.triangleparis.com/#bieres',
-    brewery: { id: 'sk35sqin', name: 'Le Triangle' }
-  },
-  {
-    id: 'sk38sqzo',
-    name: 'Brumaire et Frimaire',
-    alcool: 5.3,
-    url: 'http://www.triangleparis.com/#bieres',
-    brewery: { id: 'sk35sqin', name: 'Le Triangle' }
-  },
-  {
-    id: 'sk39sqsw',
-    name: 'Beetle Juice',
-    alcool: 8,
-    url: 'http://www.triangleparis.com/#bieres',
-    brewery: { id: 'sk35sqin', name: 'Le Triangle' }
-  },
-  {
-    id: 'sk3asqn1',
-    name: 'Ocean Bey ',
-    alcool: 3.6,
-    url: 'http://www.triangleparis.com/#bieres',
-    brewery: { id: 'sk35sqin', name: 'Le Triangle' }
-  },
-  {
-    id: 'sk3bsqk9',
-    name: 'Hazy Diamond',
-    alcool: 5,
-    url: 'http://www.triangleparis.com/#bieres',
-    brewery: { id: 'sk35sqin', name: 'Le Triangle' }
-  },
-  {
-    id: 'sk3csqt9',
-    name: 'Saison Mistral ',
-    alcool: 5,
-    url: 'http://www.triangleparis.com/#bieres',
-    brewery: { id: 'sk35sqin', name: 'Le Triangle' }
-  },
-  {
-    id: 'sk3dsq1i',
-    name: 'Overexposed ',
-    alcool: 5.5,
-    url: 'http://www.triangleparis.com/#bieres',
-    brewery: { id: 'sk35sqin', name: 'Le Triangle' }
+    brewery: { id: 'la35hqh2', name: 'Le Triangle' }
   }
 ];
