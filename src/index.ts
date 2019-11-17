@@ -73,7 +73,23 @@ const server = Server.create({
         if (!beer) {
           throw new HttpError.NotFound();
         }
-        return JsonResponse.with(beer);
+        const brewery = BREWERIES.find(b => b.id === beer.breweryId);
+        if (!brewery) {
+          throw new HttpError.Internal(
+            `Invalid ref: cannot find brewery with id "${beer.breweryId}"`
+          );
+        }
+        const result = {
+          id: beer.id,
+          name: beer.name,
+          alcool: beer.alcool,
+          url: beer.url,
+          brewery: {
+            id: brewery.id,
+            name: brewery.name
+          }
+        };
+        return JsonResponse.with(result);
       }),
       Route.all(null, () => {
         throw new HttpError.NotFound();
