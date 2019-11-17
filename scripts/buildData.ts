@@ -16,6 +16,7 @@ const BREWERIES_FLAT: Array<Brewery> = BREWERIES.map(
         name: beer.name,
         alcool: beer.alcool,
         url: beer.url,
+        description: beer.description,
         brewery: {
           id: breweryId,
           name: brewery.name

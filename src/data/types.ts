@@ -9,6 +9,7 @@ export interface Brewery {
 export interface Beer {
   id: string;
   name: string;
+  description: Array<string>;
   alcool: number | null;
   url: string;
   brewery: { name: string; id: string };
