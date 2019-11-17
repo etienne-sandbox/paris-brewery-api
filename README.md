@@ -6,18 +6,18 @@
 
 List all routes
 
-### /brewery
+### `/brewery`
 
 List all breweries
 
-### /brewery/:breweryId
+### `/brewery/:breweryId`
 
 Return the details of a brewery.
 
-### /brewery/:breweryId/beers
+### `/brewery/:breweryId/beers`
 
 Return all the beers of a brewery.
 
-### /beer/:beerId
+### `/beer/:beerId`
 
 Retuen the details of a beer.
