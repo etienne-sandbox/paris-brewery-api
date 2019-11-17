@@ -13,6 +13,8 @@ interface Brewery {
 interface Beer {
   id: string;
   name: string;
+  alcool: number | null;
+  url: string;
   breweryId: string;
 }
 
@@ -25,6 +27,8 @@ const BREWERIES_FLAT: Array<Brewery> = BREWERIES.map(brewery => {
     BEERS_FLAT.push({
       id: beerId,
       name: beer.name,
+      alcool: beer.alcool,
+      url: beer.url,
       breweryId
     });
     return beerId;
@@ -54,6 +58,8 @@ const BeerContent = `
 interface Beer {
   id: string;
   name: string;
+  alcool: number | null;
+  url: string;
   breweryId: string;
 }
 
