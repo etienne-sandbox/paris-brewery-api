@@ -13,6 +13,7 @@ import {
 } from 'tumau';
 import { BREWERIES } from './data/Brewery';
 import { BEERS } from './data/Beer';
+import { Beer, Brewery } from './data/types';
 import { CuidSlugParam } from './utils/CuidSlugParam';
 
 const ROUTES = {
@@ -29,6 +30,8 @@ const ROUTES_STR = Object.keys(ROUTES).reduce<{ [key: string]: string }>(
   {} as any
 );
 
+type Breweries = Array<Brewery>;
+
 const server = Server.create({
   handleErrors: false,
   mainMiddleware: Middleware.compose(
@@ -44,28 +47,13 @@ const server = Server.create({
         const match = ctx.getOrThrow(RouterConsumer).getOrThrow(ROUTES.brewery);
         const breweryId = match.breweryId;
         if (breweryId.present === false) {
-          return JsonResponse.with(BREWERIES);
+          return JsonResponse.with<Breweries>(BREWERIES);
         }
         const brewery = BREWERIES.find(b => b.id === breweryId.value);
         if (!brewery) {
           throw new HttpError.NotFound();
         }
-        const beers = brewery.beers.map(beerId => {
-          const beer = BEERS.find(b => b.id === beerId);
-          if (!beer) {
-            throw new HttpError.Internal(
-              `Invalid ref: cannot find beer with id "${beerId}"`
-            );
-          }
-          return {
-            id: beer.id,
-            name: beer.name
-          };
-        });
-        return JsonResponse.with({
-          ...brewery,
-          beers
-        });
+        return JsonResponse.with(brewery);
       }),
       Route.GET(ROUTES.beer, ctx => {
         const match = ctx.getOrThrow(RouterConsumer).getOrThrow(ROUTES.beer);
@@ -73,23 +61,7 @@ const server = Server.create({
         if (!beer) {
           throw new HttpError.NotFound();
         }
-        const brewery = BREWERIES.find(b => b.id === beer.breweryId);
-        if (!brewery) {
-          throw new HttpError.Internal(
-            `Invalid ref: cannot find brewery with id "${beer.breweryId}"`
-          );
-        }
-        const result = {
-          id: beer.id,
-          name: beer.name,
-          alcool: beer.alcool,
-          url: beer.url,
-          brewery: {
-            id: brewery.id,
-            name: brewery.name
-          }
-        };
-        return JsonResponse.with(result);
+        return JsonResponse.with<Beer>(beer);
       }),
       Route.all(null, () => {
         throw new HttpError.NotFound();
