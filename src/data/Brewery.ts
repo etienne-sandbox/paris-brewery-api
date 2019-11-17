@@ -2,7 +2,7 @@ import { Brewery } from './types';
 
 export const BREWERIES: Array<Brewery> = [
   {
-    id: 'n00nqo9',
+    id: 'tm07qr1',
     name: 'BAPBAP',
     description: [
       'Du concassage des grains jusqu’à l’embouteillage, tout est réalisé localement dans notre brasserie parisienne artisanale du 11ème arrondissement. Idéalement située à quelques encablures de la Place de la République, la brasserie est un lieu très atypique de 1800m2 abrité par une structure métallique du début du XXème siècle type Eiffel.',
@@ -11,30 +11,30 @@ export const BREWERIES: Array<Brewery> = [
     ],
     website: 'https://www.bapbap.paris/',
     beers: [
-      { id: 'n11nqy7', name: 'ORIGINAL' },
-      { id: 'n12nqri', name: 'BLANC BEC' },
-      { id: 'n13nq5r', name: 'VERTIGO' },
-      { id: 'n14nqh5', name: 'TOAST' },
-      { id: 'n15nqgt', name: 'POIDS PLUME' },
-      { id: 'n16nqls', name: 'TRANSALPINE' },
-      { id: 'n17nqo1', name: 'МИРАБЕЛЬ' },
-      { id: 'n18nqvq', name: 'WEISSE CITY' },
-      { id: 'n19nqfl', name: 'TUTTI FRUTTI' },
-      { id: 'n1anqcq', name: 'SHIFUMI' }
+      { id: 'tn17qu3', name: 'ORIGINALE' },
+      { id: 'tn27qcj', name: 'BLANC BEC' },
+      { id: 'tn37qoz', name: 'VERTIGO' },
+      { id: 'tn47qg6', name: 'TOAST' },
+      { id: 'tn57qld', name: 'POIDS PLUME' },
+      { id: 'tn67q96', name: 'TRANSALPINE' },
+      { id: 'tn77qwi', name: 'МИРАБЕЛЬ' },
+      { id: 'tn87qfs', name: 'WEISSE CITY' },
+      { id: 'tn97qwa', name: 'TUTTI FRUTTI' },
+      { id: 'tna7qnu', name: 'SHIFUMI' }
     ]
   },
   {
-    id: 'n1bnqwg',
+    id: 'tnb7qn4',
     name: 'Société Parisienne de Bière',
     description: [
       "Notre laboratoire c'est une cuve de brassage de 30 litres, de multiples fermeteurs, une cave électrique pour controler la fermentation de nos bières; le tout situé au coeur du quartier des Batignolles à Paris. Nous expérimentons chaque semaine.",
       'Afin de vous faire découvrir nos créations, nous brassons en suite nos recettes dans les cuves de brasseries partenaires en France. C\'est ça le brassage "gypsie". Nous installons enfin notre brasserie cette année 2018.'
     ],
     website: 'http://societeparisiennedebiere.fr/',
-    beers: [{ id: 'n1cnqgx', name: 'Batignolle' }]
+    beers: [{ id: 'tnc7qsx', name: 'Batignolle' }]
   },
   {
-    id: 'n1dnqrl',
+    id: 'tnd7q91',
     name: 'Demory Paris',
     description: [
       'Installée à Bobigny, au 1 rue de Paris à 30 mètres du métro Bobigny-Pantin Raymond Queneau et au bord du canal de l’Ourcq, notre brasserie se situe sans doute dans la région la plus dynamique du nouveau Grand Paris.',
@@ -44,22 +44,22 @@ export const BREWERIES: Array<Brewery> = [
     ],
     website: 'http://demoryparis.com/',
     beers: [
-      { id: 'n1enqqn', name: 'PARIS ALE' },
-      { id: 'n1fnq43', name: 'PARIS IPA' },
-      { id: 'n1gnqx4', name: 'ROQUETTE BLANCHE' },
-      { id: 'n1hnq2h', name: 'ASTROBLONDE' },
-      { id: 'n1inqvy', name: 'ALTITUDE' },
-      { id: 'n1jnq3u', name: 'NOVA NOIRE' },
-      { id: 'n1knq4m', name: 'COSMOBLONDE' },
-      { id: 'n1lnqry', name: 'ATOMIQUE' },
-      { id: 'n1mnqyk', name: 'SAINTE GENEVIÈVE' },
-      { id: 'n1nnqhk', name: 'PRODIGE IPA SANS ALCOOL' },
-      { id: 'n1onq96', name: 'INTRÉPIDE IPA' },
-      { id: 'n1pnqrl', name: 'HÉROÏQUE DIPA' }
+      { id: 'tne7q2f', name: 'PARIS ALE' },
+      { id: 'tnf7qou', name: 'PARIS IPA' },
+      { id: 'tng7qx2', name: 'ROQUETTE BLANCHE' },
+      { id: 'tnh7qza', name: 'ASTROBLONDE' },
+      { id: 'tni7qe6', name: 'ALTITUDE' },
+      { id: 'tnj7qs1', name: 'NOVA NOIRE' },
+      { id: 'tnk7qio', name: 'COSMOBLONDE' },
+      { id: 'tnl7qjp', name: 'ATOMIQUE' },
+      { id: 'tnm7q3f', name: 'SAINTE GENEVIÈVE' },
+      { id: 'tnn7qlm', name: 'PRODIGE IPA SANS ALCOOL' },
+      { id: 'tno7qx4', name: 'INTRÉPIDE IPA' },
+      { id: 'tnp7qy6', name: 'HÉROÏQUE DIPA' }
     ]
   },
   {
-    id: 'n1qnq57',
+    id: 'tnq7qmw',
     name: "Brasserie de l'Être",
     description: [
       'Depuis quelques années les brasseries artisanales entreprennent avec succès de redorer le blason de la bière à travers la France. A Paris, l’implantation est plus difficile qu’en région, mais quelques irréductibles tentent l’aventure. Pour l’équipe de la Brasserie de l’Être, s’implanter à Paris relève autant d’un amour profond pour la ville que du désir de ressusciter les tissus industriels et conviviaux de la capitale.',
@@ -67,75 +67,75 @@ export const BREWERIES: Array<Brewery> = [
     ],
     website: 'https://brasseriedeletre.paris/',
     beers: [
-      { id: 'n1rnq33', name: 'Sphinx' },
-      { id: 'n1snq5h', name: 'Salamandra' },
-      { id: 'n1tnq71', name: 'Oliphant' },
-      { id: 'n1unqhr', name: 'Cerberus' },
-      { id: 'n1vnqyt', name: 'Feond' }
+      { id: 'tnr7q38', name: 'Sphinx' },
+      { id: 'tns7qdn', name: 'Salamandra' },
+      { id: 'tnt7qnu', name: 'Oliphant' },
+      { id: 'tnu7qu7', name: 'Cerberus' },
+      { id: 'tnv7qrq', name: 'Feond' }
     ]
   },
   {
-    id: 'n1wnqpo',
+    id: 'tnw7qi7',
     name: 'Brasserie La Baleine',
     description: [
       'La Brasserie La Baleine est une micro-brasserie proposant des bières artisanales brassées de façon traditionnelle (à la main), ce qui permet de vous offrir des produits authentiques, vivants et naturels. Les bières qui y sont fabriquées ont ce goût caractéristique des pur malt. Les houblons, les levures, les plantes aromatiques et les épices sont sélectionnés afin d’obtenir des produits de qualité et des recettes uniques.'
     ],
     website: 'http://www.brasserie-la-baleine.com/',
     beers: [
-      { id: 'n1xnq4b', name: 'La Lucite' },
-      { id: 'n1ynqj8', name: 'La Gitane' },
-      { id: 'n1znqm1', name: 'La Picaro' },
-      { id: 'n110nqre', name: "L'Arrache Coeur" },
-      { id: 'n111nqwd', name: "Fête l'Amour" },
-      { id: 'n112nqoa', name: 'La Phare' },
-      { id: 'n113nq67', name: 'Volute' },
-      { id: 'n114nq2a', name: 'Cru 1910' },
-      { id: 'n115nqu2', name: 'Cru 1924' }
+      { id: 'tnx7qmv', name: 'La Lucite' },
+      { id: 'tny7qxt', name: 'La Gitane' },
+      { id: 'tnz7q5p', name: 'La Picaro' },
+      { id: 'tn107qme', name: "L'Arrache Coeur" },
+      { id: 'tn117qr0', name: "Fête l'Amour" },
+      { id: 'tn127q45', name: 'La Phare' },
+      { id: 'tn137qox', name: 'Volute' },
+      { id: 'tn147qxz', name: 'Cru 1910' },
+      { id: 'tn157ql0', name: 'Cru 1924' }
     ]
   },
   {
-    id: 'n116nqjm',
+    id: 'tn167qno',
     name: 'Brasserie Parisis',
     description: [
       'Vous savez, nous ne croyons pas qu’il y ait de bonnes ou de mauvaises brasseries, si nous devions résumer la situation c’est surtout des rencontres, des banques qui nous ont tendu la main. Et c’est assez curieux de se dire que les hasards, les rencontres forgent une destinée… Parce que quand on a le goût de la chose bien faite, parfois on ne trouve pas le beer-geek en face, je dirais, le miroir qui vous aide à avancer.'
     ],
     website: 'http://brasserie-parisis.com/',
     beers: [
-      { id: 'n117nq2p', name: 'PARISIS BLONDE' },
-      { id: 'n118nqpo', name: 'PARISIS BLANCHE' },
-      { id: 'n119nqxf', name: 'PARISIS AMBRÉE' },
-      { id: 'n11anqoj', name: 'PSYCHOTIC PALE ALE' },
-      { id: 'n11bnqfj', name: 'IPA SOUS SÉNART' },
-      { id: 'n11cnqh0', name: 'IPARISIS' },
-      { id: 'n11dnqkp', name: 'MORTAL KAWA' },
-      { id: 'n11enq0p', name: 'SMASH' },
-      { id: 'n21fnqul', name: 'HOP SAVE THE QUEEN' }
+      { id: 'tn177qeb', name: 'PARISIS BLONDE' },
+      { id: 'tn187q5b', name: 'PARISIS BLANCHE' },
+      { id: 'tn197qt9', name: 'PARISIS AMBRÉE' },
+      { id: 'tn1a7qlu', name: 'PSYCHOTIC PALE ALE' },
+      { id: 'tn1b7q92', name: 'IPA SOUS SÉNART' },
+      { id: 'tn1c7qjn', name: 'IPARISIS' },
+      { id: 'tn1d7qox', name: 'MORTAL KAWA' },
+      { id: 'tn1e7q7b', name: 'SMASH' },
+      { id: 'tn1f7qes', name: 'HOP SAVE THE QUEEN' }
     ]
   },
   {
-    id: 'n21gnqsq',
+    id: 'tn1g7qgu',
     name: 'Galia Paris',
     description: [
       'Pour nous, c’est en 2009 que l’aventure commence. À l’époque, on a envie de monter notre boîte alors on reprend Gallia, une ancienne brasserie parisienne abandonnée. Notre ambition : redonner leur bière aux parisiens, rien que ça !'
     ],
     website: 'https://www.galliaparis.com/',
     beers: [
-      { id: 'n21hnq1q', name: 'Weissbier' },
-      { id: 'n21inqs1', name: 'West IPA' },
-      { id: 'n21jnqyt', name: 'Corde Sensible BA' },
-      { id: 'n21knqmb', name: 'Karea' },
-      { id: 'n21lnqi5', name: 'Le Champ Sauvage' },
-      { id: 'n21mnqwd', name: 'Lager' },
-      { id: 'n21nnqcr', name: 'Njut' },
-      { id: 'n21onq8e', name: 'East IPA' },
-      { id: 'n21pnq5i', name: 'Carioca' },
-      { id: 'n21qnqj9', name: 'Red Star x Gallia' },
-      { id: 'n21rnqe0', name: 'Session IPA' },
-      { id: 'n21snq8c', name: 'Brut IPA' }
+      { id: 'tn1h7qi2', name: 'Weissbier' },
+      { id: 'tn1i7qhi', name: 'West IPA' },
+      { id: 'tn1j7qtr', name: 'Corde Sensible BA' },
+      { id: 'tn1k7qub', name: 'Karea' },
+      { id: 'tn1l7qyo', name: 'Le Champ Sauvage' },
+      { id: 'tn1m7qsr', name: 'Lager' },
+      { id: 'to1n7qny', name: 'Njut' },
+      { id: 'to1o7qcw', name: 'East IPA' },
+      { id: 'to1p7q8r', name: 'Carioca' },
+      { id: 'to1q7qoi', name: 'Red Star x Gallia' },
+      { id: 'to1r7q4g', name: 'Session IPA' },
+      { id: 'to1s7q48', name: 'Brut IPA' }
     ]
   },
   {
-    id: 'n21tnqw8',
+    id: 'to1t7qyb',
     name: "Brasserie de la Goutte d'Or",
     description: [
       'Créée en 2012, la brasserie de la goutte d’or fait figure de pionnière du mouvement craft à Paris. Localisés au coeur du quartier cosmopolite de la goutte d’or, nos influences viennent de ce quartier populaire du 18e dans lequel nous sommes installés ainsi que des scènes internationales actives au sein du renouveau brassicole.',
@@ -144,47 +144,47 @@ export const BREWERIES: Array<Brewery> = [
     ],
     website: 'http://brasserielagouttedor.com/',
     beers: [
-      { id: 'n21unqrj', name: 'ALABAMA' },
-      { id: 'n21vnq62', name: 'LE ROI DES MOUCHES' },
-      { id: 'n21wnq6t', name: 'MERINGUE' },
-      { id: 'n21xnqzd', name: 'BLE D’INDE' },
-      { id: 'n21ynqdp', name: 'CREAM' },
-      { id: 'n21znqvw', name: 'SUCCUBE' },
-      { id: 'n220nq7l', name: 'ERNESTINE' },
-      { id: 'n221nq49', name: 'TRUAND' },
-      { id: 'n222nqh3', name: 'LA SOURCE' },
-      { id: 'n223nq9c', name: 'YASAMIN' },
-      { id: 'n224nqeo', name: 'SWEET GANESH' },
-      { id: 'n225nqiw', name: 'L’EDEN' },
-      { id: 'n226nqgl', name: 'CHÂTEAU ROUGE' },
-      { id: 'n227nqtu', name: 'LA CHAPELLE' },
-      { id: 'n228nq30', name: 'L’ASSOMMOIR' },
-      { id: 'n229nqd0', name: 'HERBE BLEUE' },
-      { id: 'n22anq99', name: 'PETITE PIGALLE' },
-      { id: 'n22bnqa8', name: 'MYRHA' }
+      { id: 'to1u7qia', name: 'ALABAMA' },
+      { id: 'to1v7qei', name: 'LE ROI DES MOUCHES' },
+      { id: 'to1w7qno', name: 'MERINGUE' },
+      { id: 'to1x7qgx', name: 'BLE D’INDE' },
+      { id: 'to1y7qem', name: 'CREAM' },
+      { id: 'to1z7q92', name: 'SUCCUBE' },
+      { id: 'to207q2g', name: 'ERNESTINE' },
+      { id: 'to217qrq', name: 'TRUAND' },
+      { id: 'to227qlk', name: 'LA SOURCE' },
+      { id: 'to237qch', name: 'YASAMIN' },
+      { id: 'to247qok', name: 'SWEET GANESH' },
+      { id: 'to257qc7', name: 'L’EDEN' },
+      { id: 'to267qmz', name: 'CHÂTEAU ROUGE' },
+      { id: 'to277q9p', name: 'LA CHAPELLE' },
+      { id: 'to287q3v', name: 'L’ASSOMMOIR' },
+      { id: 'to297qzz', name: 'HERBE BLEUE' },
+      { id: 'to2a7q2s', name: 'PETITE PIGALLE' },
+      { id: 'to2b7qwb', name: 'MYRHA' }
     ]
   },
   {
-    id: 'n22cnq3w',
+    id: 'to2c7qwl',
     name: 'La Montreuilloise',
     description: [
       'Créée en 2014, La Montreuilloise est une microbrasserie dédiée à la fabrication de bières.\n    La Montreuilloise, c’est aussi un engagement local et une démarche militante pour une bière artisanale et respectueuse de l’environnement !'
     ],
     website: 'http://la-montreuilloise.com/',
     beers: [
-      { id: 'n22dnqs2', name: 'Blonde Pale Ale' },
-      { id: 'n22enqjz', name: 'Rousse aux raisins fermentés' },
-      { id: 'n22fnqso', name: 'Brune Chocolate Stout' },
-      { id: 'n22gnq9n', name: 'Blanche Witbier' },
-      { id: 'n22hnqrq', name: 'Smoked Porter' },
-      { id: 'n22inq5s', name: 'IPA – Mandarina Bavaria' },
-      { id: 'n22jnq45', name: 'PEREGRINA London Ale' },
-      { id: 'n22knqcg', name: 'Fleur de Montreuil' },
-      { id: 'n22lnq7r', name: 'La Grisette' }
+      { id: 'to2d7qgj', name: 'Blonde Pale Ale' },
+      { id: 'to2e7qne', name: 'Rousse aux raisins fermentés' },
+      { id: 'to2f7qf6', name: 'Brune Chocolate Stout' },
+      { id: 'to2g7qwt', name: 'Blanche Witbier' },
+      { id: 'to2h7qav', name: 'Smoked Porter' },
+      { id: 'to2i7qwk', name: 'IPA – Mandarina Bavaria' },
+      { id: 'to2j7qmf', name: 'PEREGRINA London Ale' },
+      { id: 'to2k7qqc', name: 'Fleur de Montreuil' },
+      { id: 'to2l7qlo', name: 'La Grisette' }
     ]
   },
   {
-    id: 'n22mnqc5',
+    id: 'to2m7qnk',
     name: 'La Parisienne',
     description: [
       'Née à Paris en 2014, et aujourd’hui située à Porte de la Villette (Pantin) dans une ancienne usine des années 30, La Parisienne met toute sa passion et son obsession de l’excellence pour créer des bières de dégustation originales, brassées à partir d’ingrédients de qualité qui mettent en valeur le terroir d’Ile-de-France.',
@@ -193,37 +193,37 @@ export const BREWERIES: Array<Brewery> = [
     ],
     website: 'http://brasserielaparisienne.com/',
     beers: [
-      { id: 'n22nnqjo', name: 'La Parisienne Blanche' },
-      { id: 'n22onq6k', name: 'La Parisienne Blonde' },
-      { id: 'n22pnqt3', name: 'La Parisienne Rousse' },
-      { id: 'n22qnqkl', name: 'La Parisienne Brune' },
-      { id: 'n22rnqzs', name: 'La Parisienne Bio Blanche' },
-      { id: 'n22snqh6', name: 'La Parisienne Bio Blonde' },
-      { id: 'n22tnq8n', name: 'La Parisienne Libérée' },
-      { id: 'n22unql0', name: 'Le Titi Parisien' },
-      { id: 'n22vnqqd', name: 'l’Apache 2.0' }
+      { id: 'to2n7q46', name: 'La Parisienne Blanche' },
+      { id: 'to2o7qwf', name: 'La Parisienne Blonde' },
+      { id: 'to2p7q3x', name: 'La Parisienne Rousse' },
+      { id: 'to2q7q2w', name: 'La Parisienne Brune' },
+      { id: 'to2r7qov', name: 'La Parisienne Bio Blanche' },
+      { id: 'to2s7qeb', name: 'La Parisienne Bio Blonde' },
+      { id: 'to2t7qxp', name: 'La Parisienne Libérée' },
+      { id: 'to2u7qyq', name: 'Le Titi Parisien' },
+      { id: 'to2v7qsn', name: 'l’Apache 2.0' }
     ]
   },
   {
-    id: 'n22wnq7m',
+    id: 'to2w7qay',
     name: 'Brasserie du Grand Paris',
     description: [
       "Pendant 5 années d'apprentissage en mode nomade, nous avons décidé de nous lancer dans l'aventure, d'imaginer puis de bâtir notre propre brasserie dans cette zone géographique que l'on appelle le Grand Paris.    "
     ],
     website: 'https://www.bgp.paris/18/accueil',
     beers: [
-      { id: 'n22xnqmd', name: 'IPA CITRA GALACTIQUE' },
-      { id: 'n22ynq2u', name: "À L'OUEST" },
-      { id: 'n22znq5g', name: 'NICE TO MEET YOU' },
-      { id: 'n230nqsl', name: 'DENISE' },
-      { id: 'n231nqy4', name: 'WAIMEA BAY' },
-      { id: 'n232nqvv', name: "L'EXPRESS" },
-      { id: 'n233nqc8', name: 'SMOKE ON THE WATER' },
-      { id: 'n234nqgs', name: 'PORTE DOREE' }
+      { id: 'to2x7qkt', name: 'IPA CITRA GALACTIQUE' },
+      { id: 'to2y7qsu', name: "À L'OUEST" },
+      { id: 'to2z7q91', name: 'NICE TO MEET YOU' },
+      { id: 'to307qki', name: 'DENISE' },
+      { id: 'to317qsk', name: 'WAIMEA BAY' },
+      { id: 'to327qfm', name: "L'EXPRESS" },
+      { id: 'to337q0k', name: 'SMOKE ON THE WATER' },
+      { id: 'to347qfa', name: 'PORTE DOREE' }
     ]
   },
   {
-    id: 'n235nq6p',
+    id: 'to357qrw',
     name: 'Le Triangle',
     description: [
       'Le Triangle est à la fois un restaurant et une microbrasserie.',
@@ -232,8 +232,8 @@ export const BREWERIES: Array<Brewery> = [
     ],
     website: 'http://www.triangleparis.com/',
     beers: [
-      { id: 'n236nqzp', name: 'Simone ' },
-      { id: 'n237nqzy', name: 'Gryesette ' }
+      { id: 'to367qlg', name: 'Simone ' },
+      { id: 'to377qzk', name: 'Gryesette ' }
     ]
   }
 ];

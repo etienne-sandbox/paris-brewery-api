@@ -24,7 +24,7 @@ export const BREWERIES: Array<Brewery> = [
     website: 'https://www.bapbap.paris/',
     beers: [
       {
-        name: 'ORIGINAL',
+        name: 'ORIGINALE',
         alcool: 5.8,
         url: 'https://www.bapbap.paris/bieres-artisanales-parisiennes-bapbap/',
         description: [
