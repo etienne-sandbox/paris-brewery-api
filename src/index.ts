@@ -18,7 +18,6 @@ import { CuidSlugParam } from './utils/CuidSlugParam';
 const ROUTES = {
   home: Chemin.create(),
   brewery: Chemin.create('brewery', P.optional(CuidSlugParam('breweryId'))),
-  breweryBeers: Chemin.create('brewery', CuidSlugParam('breweryId'), 'beers'),
   beer: Chemin.create('beer', CuidSlugParam('beerId'))
 };
 
@@ -51,7 +50,22 @@ const server = Server.create({
         if (!brewery) {
           throw new HttpError.NotFound();
         }
-        return JsonResponse.with(brewery);
+        const beers = brewery.beers.map(beerId => {
+          const beer = BEERS.find(b => b.id === beerId);
+          if (!beer) {
+            throw new HttpError.Internal(
+              `Invalid ref: cannot find beer with id "${beerId}"`
+            );
+          }
+          return {
+            id: beer.id,
+            name: beer.name
+          };
+        });
+        return JsonResponse.with({
+          ...brewery,
+          beers
+        });
       }),
       Route.GET(ROUTES.beer, ctx => {
         const match = ctx.getOrThrow(RouterConsumer).getOrThrow(ROUTES.beer);
@@ -60,25 +74,6 @@ const server = Server.create({
           throw new HttpError.NotFound();
         }
         return JsonResponse.with(beer);
-      }),
-      Route.GET(ROUTES.breweryBeers, ctx => {
-        const match = ctx
-          .getOrThrow(RouterConsumer)
-          .getOrThrow(ROUTES.breweryBeers);
-        const brewery = BREWERIES.find(b => b.id === match.breweryId);
-        if (!brewery) {
-          throw new HttpError.NotFound();
-        }
-        const beers = brewery.beers.map(beerId => {
-          const beer = BEERS.find(b => b.id === beerId);
-          if (!beer) {
-            throw new HttpError.Internal(
-              `Invalid ref: cannot find beer with id "${beerId}"`
-            );
-          }
-          return beer;
-        });
-        return JsonResponse.with(beers);
       }),
       Route.all(null, () => {
         throw new HttpError.NotFound();
