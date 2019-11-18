@@ -30,7 +30,15 @@ const ROUTES_STR = Object.keys(ROUTES).reduce<{ [key: string]: string }>(
   {} as any
 );
 
-type Breweries = Array<Brewery>;
+type Breweries = Array<{
+  id: string;
+  name: string;
+}>;
+
+const BREWERIES_SMALL: Breweries = BREWERIES.map(brewery => ({
+  id: brewery.id,
+  name: brewery.name
+}));
 
 const server = Server.create({
   handleErrors: false,
@@ -47,7 +55,7 @@ const server = Server.create({
         const match = ctx.getOrThrow(RouterConsumer).getOrThrow(ROUTES.brewery);
         const breweryId = match.breweryId;
         if (breweryId.present === false) {
-          return JsonResponse.with<Breweries>(BREWERIES);
+          return JsonResponse.with<Breweries>(BREWERIES_SMALL);
         }
         const brewery = BREWERIES.find(b => b.id === breweryId.value);
         if (!brewery) {
