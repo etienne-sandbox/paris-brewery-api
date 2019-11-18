@@ -13,7 +13,7 @@ import {
 } from 'tumau';
 import { BREWERIES } from './data/Brewery';
 import { BEERS } from './data/Beer';
-import { Beer, Brewery } from './data/types';
+import { Beer } from './data/types';
 import { CuidSlugParam } from './utils/CuidSlugParam';
 
 const ROUTES = {
