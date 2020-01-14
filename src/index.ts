@@ -24,7 +24,7 @@ const ROUTES = {
 
 const ROUTES_STR = Object.keys(ROUTES).reduce<{ [key: string]: string }>(
   (acc, key) => {
-    acc[key] = (ROUTES as any)[key].toString();
+    acc[key] = (ROUTES as any)[key].stringify();
     return acc;
   },
   {} as any
@@ -48,11 +48,24 @@ const server = Server.create({
     RouterPackage([
       Route.GET(ROUTES.home, () => {
         return JsonResponse.with({
-          routes: ROUTES_STR
+          routes: ROUTES_STR,
+          examples: {
+            allBreweries: ROUTES.brewery.serialize({
+              breweryId: { present: false }
+            }),
+            singleBrewery: ROUTES.brewery.serialize({
+              breweryId: { present: true, value: BREWERIES_SMALL[0].id }
+            }),
+            singleBeer: ROUTES.beer.serialize({
+              beerId: BREWERIES[0].beers[0].id
+            })
+          }
         });
       }),
-      Route.GET(ROUTES.brewery, ctx => {
-        const match = ctx.getOrThrow(RouterConsumer).getOrThrow(ROUTES.brewery);
+      Route.GET(ROUTES.brewery, tools => {
+        const match = tools
+          .readContextOrFail(RouterConsumer)
+          .getOrFail(ROUTES.brewery);
         const breweryId = match.breweryId;
         if (breweryId.present === false) {
           return JsonResponse.with<Breweries>(BREWERIES_SMALL);
@@ -64,7 +77,9 @@ const server = Server.create({
         return JsonResponse.with(brewery);
       }),
       Route.GET(ROUTES.beer, ctx => {
-        const match = ctx.getOrThrow(RouterConsumer).getOrThrow(ROUTES.beer);
+        const match = ctx
+          .readContextOrFail(RouterConsumer)
+          .getOrFail(ROUTES.beer);
         const beer = BEERS.find(b => b.id === match.beerId);
         if (!beer) {
           throw new HttpError.NotFound();

@@ -13,6 +13,6 @@ export function CuidSlugParam<N extends string>(
       return { match: false, next: all };
     },
     serialize: value => value,
-    toString: () => `:${name}(cuid.slug)`
+    stringify: () => `:${name}(cuid.slug)`
   };
 }
