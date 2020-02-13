@@ -1,11 +1,11 @@
 import {
-  Server,
+  TumauServer,
   Middleware,
   JsonPackage,
   RouterPackage,
   Route,
   JsonResponse,
-  Cors,
+  CorsPackage,
   Chemin,
   CheminParam as P,
   RouterConsumer,
@@ -40,15 +40,16 @@ const BREWERIES_SMALL: Breweries = BREWERIES.map(brewery => ({
   name: brewery.name
 }));
 
-const server = Server.create({
+const server = TumauServer.create({
   handleErrors: false,
   mainMiddleware: Middleware.compose(
-    Cors.create({}),
+    CorsPackage({}),
     JsonPackage(),
     RouterPackage([
       Route.GET(ROUTES.home, () => {
         return JsonResponse.with({
           routes: ROUTES_STR,
+          source: 'https://github.com/etienne-sandbox',
           examples: {
             allBreweries: ROUTES.brewery.serialize({
               breweryId: { present: false }
