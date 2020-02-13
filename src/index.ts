@@ -49,7 +49,7 @@ const server = TumauServer.create({
       Route.GET(ROUTES.home, () => {
         return JsonResponse.with({
           routes: ROUTES_STR,
-          source: 'https://github.com/etienne-sandbox',
+          source: 'https://github.com/etienne-sandbox/paris-brewery-api',
           examples: {
             allBreweries: ROUTES.brewery.serialize({
               breweryId: { present: false }
