@@ -19,17 +19,17 @@
   },
   "homepage": "https://github.com/etienne-sandbox/paris-brewery-api#readme",
   "devDependencies": {
-    "@types/fs-extra": "^8.0.1",
-    "@types/yup": "^0.26.27",
+    "@types/fs-extra": "^9.0.1",
+    "@types/yup": "^0.29.3",
     "cuid": "^2.1.8",
-    "fs-extra": "^8.1.0"
+    "fs-extra": "^9.0.1"
   },
   "dependencies": {
-    "@types/node": "^13.1.6",
-    "ts-node": "^8.6.2",
-    "tslib": "^1.10.0",
-    "tumau": "^1.0.0-alpha.49",
-    "typescript": "^3.7.4",
-    "yup": "^0.28.0"
+    "@types/node": "^14.0.27",
+    "ts-node": "^8.10.2",
+    "tslib": "^2.0.0",
+    "tumau": "^1.0.0-alpha.78",
+    "typescript": "^3.9.7",
+    "yup": "^0.29.2"
   }
 }
