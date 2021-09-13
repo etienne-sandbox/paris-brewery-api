@@ -12,7 +12,10 @@ export function CuidSlugParam<N extends string>(
       }
       return { match: false, next: all };
     },
-    serialize: value => value,
-    stringify: () => `:${name}(cuid.slug)`
+    serialize: (value) => value,
+    stringify: () => `:${name}(cuid.slug)`,
+    isEqual: (other) => other.name === name,
+    factory: CuidSlugParam,
+    meta: null,
   };
 }

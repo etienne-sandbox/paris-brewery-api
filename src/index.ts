@@ -1,15 +1,18 @@
 import {
-  TumauServer,
-  Middleware,
-  JsonPackage,
-  RouterPackage,
   Route,
   JsonResponse,
-  CorsPackage,
   Chemin,
   CheminParam as P,
   RouterConsumer,
   HttpError,
+  createServer,
+  compose,
+  JsonParser,
+  ErrorToHttpError,
+  InvalidResponseToHttpError,
+  Router,
+  CorsRoutes,
+  UrlParser,
 } from 'tumau';
 import { BREWERIES } from './data/Brewery';
 import { BEERS } from './data/Beer';
@@ -40,57 +43,56 @@ const BREWERIES_SMALL: Breweries = BREWERIES.map((brewery) => ({
   name: brewery.name,
 }));
 
-const server = TumauServer.create({
-  handleErrors: false,
-  mainMiddleware: Middleware.compose(
-    CorsPackage({}),
-    JsonPackage(),
-    RouterPackage([
-      Route.GET(ROUTES.home, () => {
-        return JsonResponse.withJson({
-          routes: ROUTES_STR,
-          source: 'https://github.com/etienne-sandbox/paris-brewery-api',
-          examples: {
-            allBreweries: ROUTES.brewery.serialize({
-              breweryId: { present: false },
-            }),
-            singleBrewery: ROUTES.brewery.serialize({
-              breweryId: { present: true, value: BREWERIES_SMALL[0].id },
-            }),
-            singleBeer: ROUTES.beer.serialize({
-              beerId: BREWERIES[0].beers[0].id,
-            }),
-          },
-        });
-      }),
-      Route.GET(ROUTES.brewery, (tools) => {
-        const match = tools
-          .readContextOrFail(RouterConsumer)
-          .getOrFail(ROUTES.brewery);
-        const breweryId = match.breweryId;
-        if (breweryId.present === false) {
-          return JsonResponse.withJson<Breweries>(BREWERIES_SMALL);
-        }
-        const brewery = BREWERIES.find((b) => b.id === breweryId.value);
-        if (!brewery) {
+const server = createServer({
+  mainMiddleware: compose(
+    ErrorToHttpError(),
+    InvalidResponseToHttpError,
+    UrlParser(),
+    JsonParser(),
+    Router(
+      CorsRoutes({ allowOrigin: ['*'] })([
+        Route.GET(ROUTES.home, () => {
+          return JsonResponse.withJson({
+            routes: ROUTES_STR,
+            source: 'https://github.com/etienne-sandbox/paris-brewery-api',
+            examples: {
+              allBreweries: ROUTES.brewery.serialize({
+                breweryId: { present: false },
+              }),
+              singleBrewery: ROUTES.brewery.serialize({
+                breweryId: { present: true, value: BREWERIES_SMALL[0].id },
+              }),
+              singleBeer: ROUTES.beer.serialize({
+                beerId: BREWERIES[0].beers[0].id,
+              }),
+            },
+          });
+        }),
+        Route.GET(ROUTES.brewery, (ctx) => {
+          const match = ctx.getOrFail(RouterConsumer).getOrFail(ROUTES.brewery);
+          const breweryId = match.breweryId;
+          if (breweryId.present === false) {
+            return JsonResponse.withJson<Breweries>(BREWERIES_SMALL);
+          }
+          const brewery = BREWERIES.find((b) => b.id === breweryId.value);
+          if (!brewery) {
+            throw new HttpError.NotFound();
+          }
+          return JsonResponse.withJson(brewery);
+        }),
+        Route.GET(ROUTES.beer, (ctx) => {
+          const match = ctx.getOrFail(RouterConsumer).getOrFail(ROUTES.beer);
+          const beer = BEERS.find((b) => b.id === match.beerId);
+          if (!beer) {
+            throw new HttpError.NotFound();
+          }
+          return JsonResponse.withJson<Beer>(beer);
+        }),
+        Route.fallback(() => {
           throw new HttpError.NotFound();
-        }
-        return JsonResponse.withJson(brewery);
-      }),
-      Route.GET(ROUTES.beer, (ctx) => {
-        const match = ctx
-          .readContextOrFail(RouterConsumer)
-          .getOrFail(ROUTES.beer);
-        const beer = BEERS.find((b) => b.id === match.beerId);
-        if (!beer) {
-          throw new HttpError.NotFound();
-        }
-        return JsonResponse.withJson<Beer>(beer);
-      }),
-      Route.all(null, () => {
-        throw new HttpError.NotFound();
-      }),
-    ])
+        }),
+      ])
+    )
   ),
 });
 
